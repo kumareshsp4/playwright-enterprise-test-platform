@@ -19,7 +19,7 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       #run: npx playwright test
-      run: npx run test:sanity
+      run: npm run test:sanity
     - name: Upload Playwright HTML Report
       if: always()
       uses: actions/upload-artifact@v4
