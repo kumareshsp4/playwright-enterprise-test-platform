@@ -14,7 +14,7 @@ private readonly btnSearch: Locator;
 
 constructor(page: Page){
     this.page = page;
-    this.lnkMyAccount = page.locator('span:has-text("My Account")');
+    this.lnkMyAccount = page.locator('a[title="My Account"]');
     this.lnkRegister =  page.locator('a').filter({ hasText: 'Register' }).first();
     this.lnkLogin = page.locator('a').filter({ hasText: 'Login' }).first();
     this.txtSearchBox = page.getByRole('textbox', { name: 'Search' });

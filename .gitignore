@@ -7,6 +7,9 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 
+# Allure reports/results
+allure-results/
+allure-report/
 
 # Environment secrets
 .env
