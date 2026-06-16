@@ -1,6 +1,7 @@
-# PlaywrightFramework
+# Playwright Enterprise Test Platform
 
-A comprehensive automation testing framework built with Playwright and TypeScript.
+A production-style quality engineering platform built with Playwright and
+TypeScript for scalable UI, API, accessibility, visual, and end-to-end testing.
 
 ## Overview
 

@@ -1,7 +1,7 @@
 {
-  "name": "playwrightframework",
+  "name": "playwright-enterprise-test-platform",
   "version": "1.0.0",
-  "description": "",
+  "description": "Enterprise-grade Playwright and TypeScript quality engineering platform",
   "main": "index.js",
   "scripts": {
     "test:master": "playwright test --grep @master",
