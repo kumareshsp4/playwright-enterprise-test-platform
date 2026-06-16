@@ -1,8 +1,8 @@
 /**
  * Test Case: Add Product to Cart
- * 
+ *
  * Tags: @master @regression
- * 
+ *
  * Steps:
  * 1. Navigate to application URL
  * 2. Enter an existing product name in the search box
@@ -33,7 +33,7 @@ test.beforeEach(async ({ page }) => {
   // Initialize page objects
   homePage = new HomePage(page);
   searchResultsPage = new SearchResultsPage(page);
-  productPage=new ProductPage(page);
+  productPage = new ProductPage(page);
 });
 
 test.afterEach(async ({ page }) => {
@@ -59,7 +59,7 @@ test('Add product to cart test @master @regression', async ({ page }) => {
     //productPage = await searchResultsPage.selectProduct(productName);
     await searchResultsPage.selectProduct(productName);
     await productPage.setQuantity(config.productQuantity); // Set quantity
-    await productPage.addToCart();                         // Add to cart
+    await productPage.addToCart(); // Add to cart
 
     // Step 8: Assert success message is visible
     expect(await productPage.isConfirmationMessageVisible()).toBeTruthy();

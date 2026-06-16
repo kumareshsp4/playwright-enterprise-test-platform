@@ -1,8 +1,8 @@
 /**
  * Test Case: User Logout
- * 
+ *
  * Tags: @master @regression
- * 
+ *
  * Steps:
  * 1) Navigate to the application URL
  * 2) Go to Login page from Home page
@@ -39,17 +39,16 @@ test.beforeEach(async ({ page }) => {
   logoutPage = new LogoutPage(page);
 });
 
-
 test('User logout test @master @regression', async () => {
-    //Navigate to Login Page
-    await homePage.clickMyAccount();
-    await homePage.clickLogin();
+  //Navigate to Login Page
+  await homePage.clickMyAccount();
+  await homePage.clickLogin();
 
-    //Enter the login details
-    await loginPage.login(testConfig.email, testConfig.password);
+  //Enter the login details
+  await loginPage.login(testConfig.email, testConfig.password);
 
-    const isLoggedIn = await myAccountPage.isMyAccountPageExist();
-    expect(isLoggedIn).toBeTruthy();
+  const isLoggedIn = await myAccountPage.isMyAccountPageExist();
+  expect(isLoggedIn).toBeTruthy();
 
   // Step 5: Click Logout, which returns LogoutPage instance
   logoutPage = await myAccountPage.clickLogout();
